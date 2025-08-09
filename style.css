@@ -1,0 +1,261 @@
+
+:root {
+    
+    --bg-gradient-start: #040918;
+    --bg-gradient-end: #091540;
+    --nav-bg: hsl(226, 25%, 17%);
+    --btn-bg: hsl(226, 25%, 17%);
+    --card-bg: hsl(226, 25%, 17%);
+    --card-border: hsl(225, 23%, 24%);
+    --btn-bg-tog:hsl(225, 23%, 24%);
+/* .......................................................... */
+
+    --text-main: white;
+    --text-secondary: hsl(217, 61%, 90%);
+
+    --btn-hover-bg: hsl(3, 86%, 64%);
+    --btn-hover-text: black;
+
+    /* Switch colors */
+    --switch-off-bg: hsl(226, 11%, 37%);
+    --switch-on-bg: hsl(3, 71%, 56%);
+    --shaow: hsl(226, 11%, 37%);
+    --shadow-card:none;
+}
+
+/* .......................................................... */
+body.light-mode {
+    --bg-gradient-start: #EBF2FC;
+    --bg-gradient-end: #EEF8F9;
+    --nav-bg: white;
+    --btn-bg: white;
+    --card-bg: #ffffff;
+    --card-border: hsl(200, 60%, 99%);
+    --btn-bg-tog: hsl(0, 0%, 93%);
+
+    --text-main: black;
+    --text-secondary: #555;
+
+    --btn-hover-bg: hsl(3, 77%, 44%);
+    --btn-hover-text: white;
+
+    --switch-off-bg: hsl(0, 0%, 93%);
+    --switch-on-bg: hsl(3, 71%, 56%);
+    --shaow:hsl(217, 61%, 90%);
+    --shadow-card:hsl(0, 0%, 93%);
+}
+
+/* .......................................................... */
+body {
+    background-image: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    padding: 10px;
+    grid-column: 2 / span 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-bg);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px var(--shaow),0 0 3px var(--shaow);
+}
+
+nav img {
+    color: var(--text-main);
+}
+
+.tog {
+    background-color: var(--btn-bg-tog);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: var(--text-main);
+}
+
+/* .......................................................... */
+main {
+    grid-column: 2 / span 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.top h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    color: var(--text-main);
+}
+
+/* Responsive for top */
+@media (max-width: 600px) {
+    .top {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .top h2 {
+        grid-column: 3 / 10;
+        grid-row: 1;
+    }
+
+    .btns {
+        grid-row: span 2;
+        grid-column: 3 / 10;
+        align-self: center;
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.btns button {
+    background-color: var(--btn-bg);
+    color: var(--text-main);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btns button:hover,
+.btns button.active {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+}
+
+/* .......................................................... */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    grid-column: auto;
+    background-color: var(--card-bg);
+    min-height: 200px;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid var(--card-border);
+    box-shadow: 0 0 3px var(--shadow-card), 0 0 3px var(--shadow-card);
+}
+
+.ctop {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ctop img {
+    margin-bottom: 80px;
+}
+
+.ctop .bot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ctop .bot h3 {
+    color: var(--text-main);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ctop .bot p {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+.cbotm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cbotm button {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border-radius: 25px;
+    border: 2px solid var(--switch-off-bg);
+    padding: 10px 20px;
+    text-align: center;
+}
+/* .......................................................... */
+#checkNativeSwitch.form-check-input {
+    align-self: center;
+    width: 3rem;
+    height: 1.4rem;
+    background-color: var(--switch-off-bg);
+    border-color: var(--switch-off-bg);
+}
+
+#checkNativeSwitch.form-check-input:checked {
+    background-color: var(--switch-on-bg);
+    border-color: var(--switch-on-bg);
+    border: none;
+}
+
+#checkNativeSwitch.form-check-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* .......................................................... */
+.tog .icon-sun::before {
+    content: "<div class=" icon-sun"></div>";
+}
+
+.tog .icon-moon::before {
+    content: "<div class=" icon-moon"></div>";
+}
+
+
+
+body,
+nav,
+.card,
+button,
+.top h2 {
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        background-image 0.6s ease;
+}
+* {
+    transition: all 0.4s ease;
+}

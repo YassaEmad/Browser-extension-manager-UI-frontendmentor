@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="/images/logo.svg" alt="">
+        <button class="tog"><div class="icon-sun"></div></button>
+    </nav>
+    <main>
+        <section class="top">
+            <h2>Extensions List</h2>
+            <div class="btns">
+                <button class="active">All</button>
+                <button>Active</button>
+                <button>Inactive</button>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-devlens.svg" alt="">
+                    <div class="bot">
+                        <h3>DevLens</h3>
+                        <p>Quickly inspect page layouts and visualize element boundaries.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-style-spy.svg" alt="">
+                    <div class="bot">
+                        <h3>StyleSpy</h3>
+                        <p>Instantly analyze and copy CSS from any webpage element.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-speed-boost.svg" alt="">
+                    <div class="bot">
+                        <h3>SpeedBoost</h3>
+                        <p>Optimizes browser resource usage to accelerate page loading.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-json-wizard.svg" alt="">
+                    <div class="bot">
+                        <h3>JSONWizard</h3>
+                        <p>QFormats, validates, and prettifies JSON responses in-browser.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-tab-master-pro.svg" alt="">
+                    <div class="bot">
+                        <h3>TabMaster Pro</h3>
+                        <p>Organizes browser tabs into groups and sessions.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-viewport-buddy.svg" alt="">
+                    <div class="bot">
+                        <h3>ViewportBuddy</h3>
+                        <p>QSimulates various screen resolutions directly within the browser.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-markup-notes.svg" alt="">
+                    <div class="bot">
+                        <h3>Markup Notes</h3>
+                        <p>QEnables annotation and notes directly onto webpages for collaborative debugging.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-grid-guides.svg" alt="">
+                    <div class="bot">
+                        <h3>GridGuides</h3>
+                        <p>Overlay customizable grids and alignment guides on any webpage.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-palette-picker.svg" alt="">
+                    <div class="bot">
+                        <h3>Palette Picker</h3>
+                        <p>Instantly extracts color palettes from any webpage.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-link-checker.svg" alt="">
+                    <div class="bot">
+                        <h3>LinkChecker</h3>
+                        <p>Scans and highlights broken links on any page.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-dom-snapshot.svg" alt="">
+                    <div class="bot">
+                        <h3>DOM Snapshot</h3>
+                        <p>Capture and export DOM structures quickly.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ctop">
+                    <img src="/images/logo-console-plus.svg" alt="">
+                    <div class="bot">
+                        <h3>ConsolePlus</h3>
+                        <p>Enhanced developer console with advanced filtering and logging.</p>
+                    </div>
+                </div>
+                <div class="cbotm">
+                    <button>Remove</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>
